@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+{% block customScript %}
+{% endblock %}
+<html lang="vi">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{% endblock %}</title>
+
+<head>
+
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url('static', filename='vendor/bootstrap/bootstrap.css') }}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url('static', filename='vendor/animate/animate.css') }}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url('static', filename='vendor/css-hamburgers/hamburgers.min.css') }}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url('static', filename='vendor/select2/select2.min.css') }}">
+	<!--===============================================================================================-->
+
+	{% block head %}
+	{% endblock %}
+
+</head>
+
+<script src="{{ url('static', filename='vendor/jquery/jquery-3.4.1.js') }}"></script>
+<script src="{{ url('static', filename='vendor/socketio/socket.io.js') }}"></script>
+<script src="{{ url('static', filename='vendor/bootstrap/js/bootstrap.js') }}"></script>
+<script src="{{ url('static', filename='vendor/tilt/tilt.jquery.min.js') }}"></script>
+
+{% block pagecss %}
+{% endblock %}
+
+{% block pagejs %}
+{% endblock %}
+<!-- <style>
+html {
+  background: url(media/images/Background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-color: blue; */
+}
+</style> -->
+<body>
+
+	{% block body %}
+	{% endblock %}
+
+	<!--===============================================================================================-->
+	<script src="{{ url('static', filename='vendor/select2/select2.min.js') }}"></script>
+	<!--===============================================================================================-->
+
+	<script >
+	$('.js-tilt').tilt({
+		scale: 1.1
+	})
+	</script>
+
+	{% block footerjs %}
+	{% endblock %}
+
+</body>
+</html>

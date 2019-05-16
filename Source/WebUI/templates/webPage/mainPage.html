@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+{% extends "base.html" %}
+
+{% block title %}VNProstheticHand - Your life - Our misson{% endblock %}
+
+{% block pagejs %}
+<script type="text/javascript" charset="utf-8" src="{{ url('static', filename='js/mainPage.js') }}"></script>
+{% endblock %}
+
+{% block pagecss %}
+<link rel="stylesheet" type="text/css" href="{{ url('static', filename='css/mainPage.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="header">
+  <img src="media/images/Logo.png" alt="logo" />
+  <div>
+    <h1 style="margin-bottom:0px;">VNProstheticHand</h1>
+    <div class="slogan">Your life - Our mission</div>
+    <h4>Developed by Nguyen Quang Duc</h4>
+  </div>
+  <div id="time_elapsed" style="font-size:15px"></div>
+</div>
+
+<div id = "inline">
+  <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="handSwitch">
+    <label class="onoffswitch-label" for="handSwitch">
+      <span class="onoffswitch-inner"></span>
+      <span class="onoffswitch-switch"></span>
+    </label>
+  </div>
+  <div align = center>
+    <button id="startButton">Start Recording Emg Data</button>
+    <button id="disconnect">Finish & Restart</button>
+  </div>
+</div>
+
+<br>
+
+<br>
+
+<div class="tab">
+  <div align = center>
+    <button class="tablinks" onclick="openTab(event, 'All Grips')" id="defaultOpen">All Grips</button>
+    <button class="tablinks" onclick="openTab(event, 'Current Grip')">Current Grip</button>
+  </div>
+</div>
+
+<div id="trainingDialog" class="dialog">
+  <!-- Modal content -->
+  <div class="dialogContent">
+    <span class="close">&times;</span>
+    <div id ="response" align="center"></div>
+    <img id="trainPic" class="scaleImage"><br>
+    <div align = center>
+      <button id="trainButton"></button>
+      <button id="deleteButton"></button>
+      <button id="next"></button>
+    </div>
+  </div>
+</div>
+
+<div id="All Grips" class="tabcontent">
+  <!-- The Modal -->
+  <div id = "inline">
+    <div class = "name">Grip 0</div>
+    <div id="myProgress" class = "bar">
+      <div id="mvDataBar0" ></div>
+    </div>
+  </div>
+
+  <br>
+
+  <div id = "inline">
+    <div class = "name">Grip 1</div>
+    <div id="myProgress" class = "bar">
+      <div id="mvDataBar1" ></div>
+    </div>
+  </div>
+
+  <br>
+
+  <div id = "inline">
+    <div class = "name">Grip 2</div>
+    <div id="myProgress" class = "bar">
+      <div id="mvDataBar2" ></div>
+    </div>
+  </div>
+
+  <br>
+
+  <div id = "inline">
+    <div class = "name">Grip 3</div>
+    <div id="myProgress" class = "bar">
+      <div id="mvDataBar3" ></div>
+    </div>
+  </div>
+
+  <br>
+
+  <div id = "inline">
+    <div class = "name">Grip 4</div>
+    <div id="myProgress" class = "bar">
+      <div id="mvDataBar4" ></div>
+    </div>
+  </div>
+
+  <br>
+
+  <div id = "inline">
+    <div class = "name">Grip 5</div>
+    <div id="myProgress" class = "bar">
+      <div id="mvDataBar5" ></div>
+    </div>
+  </div>
+
+  <br>
+
+  <div id = "inline">
+    <div class = "name">Grip 6</div>
+    <div id="myProgress" class = "bar">
+      <div id="mvDataBar6" ></div>
+    </div>
+  </div>
+
+  <br>
+
+  <div id = "inline">
+    <div class = "name">Grip 7</div>
+    <div id="myProgress" class = "bar">
+      <div id="mvDataBar7" ></div>
+    </div>
+  </div>
+
+  <br>
+
+  <div id = "inline">
+    <div class = "name">Grip 8</div>
+    <div id="myProgress" class = "bar">
+      <div id="mvDataBar8" ></div>
+    </div>
+  </div><br>
+
+  <div id = "inline">
+    <div class = "name">Grip 9</div>
+    <div id="myProgress" class = "bar">
+      <div id="mvDataBar9" ></div>
+    </div>
+  </div>
+</div>
+
+<div id="Current Grip" class="tabcontent">
+  <img id="predictPic" class="scaleImage">
+</div>
+{% endblock %}
+
+{% block footerjs %}
+<script>
+  document.getElementById("defaultOpen").click();
+</script>
+{% endblock %}

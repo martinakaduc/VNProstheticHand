@@ -1,0 +1,39 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+
+# disable the watchdog timer's automatic reboot
+echo 1 >/sys/devices/virtual/misc/watchdog/disable
+
+### invoke first-install stuff, will be commented out during first-install process
+#/sbin/third-install.sh
+
+### uncomment to disable USB device mode and enable host mode for the OTG port
+# rmmod g_multi || true
+
+### uncomment to enable bluetooth
+#screen -S "brcm_patchram_plus" -d -m /usr/local/sbin/bluetooth_patchram.sh
+#sleep 20
+
+### uncomment to enable login consoles on bluetooth rfcomm
+#screen -S "rfcomm-getty" -d -m /usr/bin/rfcomm watch 0 1 /sbin/rfcomm-getty.sh {}
+
+### uncomment to enable "always pair" bluetooth agent, which automatically accepts all pairing requests
+#screen -S "always_pair_agent" -d -m /usr/local/sbin/always_pair_agent.py
+
+### uncomment to try to turn on wifi during boot without systemd
+# screen -S "ifup wlan0" -d -m ifup wlan0
+chown -R root:gpio /sys/class/gpio
+chmod -R ug+rw /sys/class/gpio
+python /root/VNProstheticHand/script_for_edison.py &
+exit 0

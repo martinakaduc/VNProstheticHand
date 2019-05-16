@@ -1,0 +1,276 @@
+body {
+  font-size: 1.5vw;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  background-size: cover;
+  background-position: center;
+}
+/* The Modal (background) */
+.dialog {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.dialogContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tab button {
+  width: 49%;
+}
+
+/* Create an active/current tablink class */
+button.active {
+  background-color: #00CC00;
+  color: #FFFFFF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 98%;
+  height: 80%;
+  position: absolute;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+button {
+  line-height: 40px;
+  /* padding: 0 40px; */
+  background-color: #f1f1f1;
+  border: none;
+}
+#myProgress {
+  width: 94%;
+  height: 24px;
+  background-color: #ddd;
+}
+#mvDataBar0 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0
+}
+#mvDataBar1 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0
+}
+#mvDataBar2 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0
+}
+#mvDataBar3 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0
+}
+#mvDataBar4 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0
+}
+#mvDataBar5 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0
+}
+#mvDataBar6 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0
+}
+#mvDataBar7 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0
+}
+#mvDataBar8 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0
+}
+#mvDataBar9 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0
+}
+
+br {
+  display: block;
+  margin: 8px 0;
+}
+p {
+  position: relative;
+  z-index:1
+  color: #FFFFFF;
+}
+#inline {
+  overflow: hidden;
+}
+.name {
+  float: left;
+  padding-right: 5px;
+}
+.bar {
+  overflow: hidden;
+  padding: 0px;
+}
+.onoffswitch {
+  position: relative; width: 90px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+  float: left;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #999999; border-radius: 0px;
+}
+.onoffswitch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 26px;
+  font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+.onoffswitch-inner:before {
+  content: "RIGHT";
+  padding-left: 10px;
+  background-color: #2E8DEF; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+  content: "LEFT";
+  padding-right: 10px;
+  background-color: #00CC00; color: #FFFFFF;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block; width: 25px; margin: 0px;
+  background: #000000;
+  position: absolute; top: 0; bottom: 0;
+  right: 65px;
+  transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+.header img {
+  float: left;
+  width: 120px;
+  height: 120px;
+}
+
+.header div {
+  position: relative;
+  top: 15px;
+}
+.header h5 {
+  top: 0px;
+  left: 150px;
+  bottom: 0px;
+}
+.slogan {
+    position: relative;
+    line-height:1;
+    top: 0px; /* Changes the space between the logo and the slogan */
+    font-size: .7em; /* Changes the font size of the slogan */
+    font-style: italic; /* Changes the font style of the slogan */
+    color:#222222; /* Changes the color of the slogan */
+    letter-spacing:0px; /* Changes the letter spacing of the slogan */
+    left: 200px;
+}
+#time_elapsed {
+  float: right;
+  color: #00CC00;
+}
+.scaleImage {
+  max-height: 80%
+}
+html {
+  background: url(../../media/images/Background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

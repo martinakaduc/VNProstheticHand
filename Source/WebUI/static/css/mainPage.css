@@ -69,6 +69,8 @@ button.active {
   width: 98%;
   height: 80%;
   position: absolute;
+  overflow: hidden;
+  background-color: rgba(192, 192, 192, 0.5);
 }
 img {
   display: block;
@@ -83,8 +85,9 @@ button {
   border: none;
 }
 #myProgress {
-  width: 94%;
+  width: 90%;
   height: 24px;
+  overflow: hidden;
   background-color: #ddd;
 }
 #mvDataBar0 {
@@ -93,7 +96,8 @@ button {
   color: #FFFFFF;
   background-color: #00CC00;
   position: absolute;
-  z-index :0
+  z-index :0;
+  overflow: hidden;
 }
 #mvDataBar1 {
   width: 0%;
@@ -101,7 +105,7 @@ button {
   color: #FFFFFF;
   background-color: #00CC00;
   position: absolute;
-  z-index :0
+  z-index :0;
 }
 #mvDataBar2 {
   width: 0%;
@@ -109,7 +113,7 @@ button {
   color: #FFFFFF;
   background-color: #00CC00;
   position: absolute;
-  z-index :0
+  z-index :0;
 }
 #mvDataBar3 {
   width: 0%;
@@ -117,7 +121,7 @@ button {
   color: #FFFFFF;
   background-color: #00CC00;
   position: absolute;
-  z-index :0
+  z-index :0;
 }
 #mvDataBar4 {
   width: 0%;
@@ -125,7 +129,7 @@ button {
   color: #FFFFFF;
   background-color: #00CC00;
   position: absolute;
-  z-index :0
+  z-index :0;
 }
 #mvDataBar5 {
   width: 0%;
@@ -133,7 +137,7 @@ button {
   color: #FFFFFF;
   background-color: #00CC00;
   position: absolute;
-  z-index :0
+  z-index :0;
 }
 #mvDataBar6 {
   width: 0%;
@@ -141,7 +145,7 @@ button {
   color: #FFFFFF;
   background-color: #00CC00;
   position: absolute;
-  z-index :0
+  z-index :0;
 }
 #mvDataBar7 {
   width: 0%;
@@ -149,7 +153,7 @@ button {
   color: #FFFFFF;
   background-color: #00CC00;
   position: absolute;
-  z-index :0
+  z-index :0;
 }
 #mvDataBar8 {
   width: 0%;
@@ -157,7 +161,7 @@ button {
   color: #FFFFFF;
   background-color: #00CC00;
   position: absolute;
-  z-index :0
+  z-index :0;
 }
 #mvDataBar9 {
   width: 0%;
@@ -165,7 +169,47 @@ button {
   color: #FFFFFF;
   background-color: #00CC00;
   position: absolute;
-  z-index :0
+  z-index :0;
+}
+#mvDataBar10 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0;
+}
+#mvDataBar11 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0;
+}
+#mvDataBar12 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0;
+}
+#mvDataBar13 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0;
+}
+#mvDataBar14 {
+  width: 0%;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #00CC00;
+  position: absolute;
+  z-index :0;
 }
 
 br {
@@ -185,7 +229,8 @@ p {
   padding-right: 5px;
 }
 .bar {
-  overflow: hidden;
+  /* overflow: hidden; */
+  float: right;
   padding: 0px;
 }
 .onoffswitch {
@@ -265,7 +310,7 @@ p {
   color: #00CC00;
 }
 .scaleImage {
-  max-height: 80%
+  max-height: 80%;
 }
 html {
   background: url(../../media/images/Background.png) no-repeat center center fixed;

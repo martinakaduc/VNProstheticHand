@@ -4,7 +4,7 @@ $(document).ready(function(){
   var currentGrip = -1;
   var gripToTrain = -1;
   var handLR = "L-";
-  const NUM_OF_MOVES = 10
+  const NUM_OF_MOVES = 15
   var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
   // Dialog
   var modal = document.getElementById('trainingDialog');
@@ -60,7 +60,7 @@ $(document).ready(function(){
     var mvData = msg.data.slice(1, -1).split(',');
     for (var i = 0; i < NUM_OF_MOVES; i++) {
       elem[i] = document.getElementById("mvDataBar" + i);
-      elem[i].style.width = mvData[i]*0.91 + '%';
+      elem[i].style.width = mvData[i]*0.885 + '%';
       elem[i].innerHTML = mvData[i] * 1 + '%';
     }
   });

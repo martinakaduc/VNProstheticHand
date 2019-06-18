@@ -1,5 +1,5 @@
 NUM_OF_SENSORS = 8
-NUM_OF_MOVES = 10
+NUM_OF_MOVES = 15
 SUBSAMPLES = 3
 K = 5
 MOVE_OF_FINGER =[
@@ -13,8 +13,9 @@ MOVE_OF_FINGER =[
         [0, 0, 0, 1],#three
         [1, 0, 0, 0],#four
         [0, 0, 1, 1]]#gun
-NAME_OF_MOVES = ['rest', 'fist', ' plam', 'point', 'pinch', 'tripod', 'hello', 'three', 'four', 'gun']
+# NAME_OF_MOVES = ['rest', 'fist', ' plam', 'point', 'pinch', 'tripod', 'hello', 'three', 'four', 'gun', 'promi']
 BUTTON_PIN = 7
+HIST_LEN = 35
 NUMS_OF_EACH_TRAINING = 100
 MAX_TRAINING_TIMES = 3 #Each grip
 MODEL_FILE = "mainModel.sav"

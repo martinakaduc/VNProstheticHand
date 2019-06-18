@@ -55,7 +55,7 @@ async def push_data():
   while True:
       # m.run()
       for i in range(common.NUM_OF_MOVES):
-          prediction[i] = round((m.history_cnt[i] / 36 * 100), 0)
+          prediction[i] = round((m.history_cnt[i] / common.HIST_LEN * 100), 0)
       await sio.sleep(0.01)
       await sio.emit('move data', {'data': '%s' % prediction},
                   namespace='/test')
